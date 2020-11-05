@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="Homepage">
     <!-- <div>
       <Logo />
       <h1 class="title">
@@ -24,11 +24,15 @@
         </a>
       </div>S
     </div> -->
+    <Header></Header>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Homepage'
+}
+
 </script>
 
 <style>
