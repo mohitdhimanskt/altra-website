@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <!-- <div>
       <Logo />
       <h1 class="title">
         altra
@@ -22,8 +22,8 @@
         >
           GitHub
         </a>
-      </div>
-    </div>
+      </div>S
+    </div> -->
   </div>
 </template>
 
