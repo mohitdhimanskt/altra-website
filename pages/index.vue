@@ -25,6 +25,9 @@
       </div>S
     </div> -->
     <Header></Header>
+    <Hero-section></Hero-section>
+    <FeaturedDeal></FeaturedDeal>
+    <TreksCategories></TreksCategories>
   </div>
 </template>
 
