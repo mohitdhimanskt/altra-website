@@ -397,6 +397,7 @@ max-height: 120px;
 }
 .home-upcommingtrek-card-description {
 padding: 20px;
+
 }
 .home-featured-deals {
 padding: 20px;
@@ -1278,7 +1279,7 @@ box-shadow: none;
 .submit_btn_contact {
 border-radius: 0;
 font-size: 20px;
-padding: 10px 45px;
+padding: 10px 43px;
 text-transform: uppercase;
 transition: all 0.8s ease 0s;;
 }
