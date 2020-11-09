@@ -44,7 +44,7 @@
                                     <div class="col-12 col-md-4 col-lg-3 mb-5"><a
                                             href="#">
                                             <div class="home-upcommingtrek-card">
-                                                    <img src="img/upcoming-trek-1.jpg"
+                                                    <img src="~/assets/uploads/upcoming-trek-1.jpg"
                                                         alt="Lorem Ipsum"
                                                         title="Lorem Ipsum"
                                                         class="home-upcommingtrek-image img-responsive">
@@ -59,7 +59,7 @@
                                         </a></div>
                                     <div class="col-12 col-md-4 col-lg-3 mb-5"><a href="#">
                                             <div class="home-upcommingtrek-card">
-                                                    <img src="img/upcoming-trek-2.jpg"
+                                                    <img src="~/assets/uploads/upcoming-trek-2.jpg"
                                                         alt="Lorem Ipsum"
                                                         title="Lorem Ipsum"
                                                         class="home-upcommingtrek-image">
@@ -75,7 +75,7 @@
                                     <div class="col-12 col-md-4 col-lg-3 mb-5"><a
                                             href="#">
                                             <div class="home-upcommingtrek-card">
-                                                    <img src="img/upcoming-trek-3.jpg"
+                                                    <img src="~/assets/uploads/upcoming-trek-3.jpg"
                                                         alt="Lorem Ipsum"
                                                         title="Lorem Ipsum"
                                                         class="home-upcommingtrek-image">
@@ -91,7 +91,7 @@
                                     <div class="col-12 col-md-4 col-lg-3 mb-5"><a
                                             href="#">
                                             <div class="home-upcommingtrek-card">
-                                                    <img src="img/upcoming-trek-4.jpg"
+                                                    <img src="~/assets/uploads/upcoming-trek-4.jpg"
                                                         title="Lorem Ipsum"
                                                         class="home-upcommingtrek-image">
                                                 <div class="home-upcommingtrek-card-description"><label

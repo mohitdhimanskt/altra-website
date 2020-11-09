@@ -1,64 +1,23 @@
 <template>
-    <div class="home-featured-deals">
-                    <div class="container">
-                        <h2 class="altra-row-title text-center primary-color divider-text"><span>Featured Deals</span></h2>
-                    <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center deals-box">
-                        <div class="featured-deals featured-deals-image-1">
-                            <div class="overlay-image"></div>
-                        <div class="featured-deals-content">
-                        <h4 class="home-featured-deals-title">Trekking</h4>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center deals-box">
-                        <div class="featured-deals featured-deals-image-2">
-                            <div class="overlay-image"></div>
-                        <div class="featured-deals-content">
-                        <h4 class="home-featured-deals-title">Trekking</h4>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                    </div>
-
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center deals-box">
-                        <div class="featured-deals featured-deals-image-3">
-                            <div class="overlay-image"></div>
-                        <div class="featured-deals-content">
-                        <h4 class="home-featured-deals-title">Trekking</h4>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                    </div>
-
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center deals-box">
-                        <div class="featured-deals featured-deals-image-4">
-                            <div class="overlay-image"></div>
-                        <div class="featured-deals-content">
-                        <h4 class="home-featured-deals-title">Trekking</h4>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                    </div>
-
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center deals-box">
-                        <div class="featured-deals featured-deals-image-5">
-                            <div class="overlay-image"></div>
-                        <div class="featured-deals-content">
-                        <h4 class="home-featured-deals-title">Trekking</h4>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                    </div>
-
-                </div>
-            </div>
-
-                </div>
+<div>
+    <div class="featured">
+      <h1>Featured Deals</h1>
+     </div>
+          <div class="backgroundImage" :style="{ backgroundImage: `url(${backgroundImagePath})` }">
+         <h4>Trekking</h4>
+         <p>Lorem Ispum</p>
+         </div>
+</div>
 </template>
+
+
 <script>
+import backgroundImagePath from '~/uploads/.jpeg'
 export default {
-    name: 'FeaturedDeal'
+    name: 'FeaturedDeal',
+     data() {
+    return { backgroundImagePath }
+  }
+
 }
 </script>
