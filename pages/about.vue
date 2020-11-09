@@ -72,6 +72,7 @@
                 survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </p>
+              
             </div>
           </div>
           <!--  coloumn ends  -->
@@ -85,6 +86,7 @@
               />
             </div>
           </div>
+           
           <!--  coloumn ends  -->
           <div class="clearfix"></div>
         </div>
@@ -277,13 +279,13 @@ export default {
       this.scrollPosition = window.scrollY;
     },
     myFunction() {
-      var nav = document.getElementById("menu-icon");
+      var nav = document.getElementById(".menu-icon");
       // var sticky = header.offsetTop;
       window.onscroll = function() {
         if (window.scrollTop()) {
-          nav.classList.add("black");
+          nav.classList.add("");
         } else {
-          nav.classList.remove("black");
+          nav.classList.remove("");
         }
       };
     }
