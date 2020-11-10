@@ -376,7 +376,7 @@
                                     </div>
                                 </a></div>
                         </div>
-                        <a href="./pages/leaders.html"><input type="button" value="Find your guide" class="trek-button button-color"/></a>
+                        <nuxt-link to="leader"><input type="button" value="Find your guide" class="trek-button button-color"/></nuxt-link>
                     <!---->
                 </div>
             </div>
