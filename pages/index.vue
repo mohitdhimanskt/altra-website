@@ -1,9 +1,8 @@
 <template>
   <div id="layout">
             <div class="home">
-                <div class="header-logo header-bg">
-                    <!-- <a href="index.html"><img src="~/assets/uploads/main-logo.png" class="img-responsive logo" alt="altra travels" /></a> -->
-                    <!-- new header-->
+                <!-- <div class="header-logo header-bg">
+                    
                         <nav :class="{'black': scrollPosition > 0}">
                            <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
@@ -26,8 +25,9 @@
                            </div>
                         </nav>
 
-                    <!-- new header ends-->
-                </div> <!-- header-logo ends-->
+                   
+                </div>  -->
+                <Header></Header>
 
                 <div class="hero-section">
                     <div class="container">
@@ -522,7 +522,8 @@
                         </div>
                     </div>
             </div>
-
+            <Footer></Footer>
+<!-- 
 <div class="home-newsletter">
     <div class="container">
         <div class="newsletter-box">
@@ -587,13 +588,13 @@
                 </ul>
             </div>
         </div>  
-      </div> <!-- row ends -->
+      </div> 
         <div class="col-12 col-md-12 col-lg-12">
             <hr />
             <p class="copyright">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</p>
         </div>
     </div>
-</div>
+</div> -->
 <!-- <div class="midlight_purple-footer">
     <div class="container">
         <div class="row">

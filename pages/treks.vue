@@ -3,8 +3,8 @@
     <!---->
     <div id="layout">
       <div class="home">
-        <div class="header-logo other-logo">
-          <!-- new header-->
+        <!-- <div class="header-logo other-logo">
+        
           <nav>
             <div class="menu-icon">
               <i class="fa fa-bars fa-2x"></i>
@@ -29,8 +29,8 @@
             </div>
           </nav>
 
-          <!-- new header ends-->
-        </div>
+          
+        </div> -->
         <!-- header-logo ends-->
 
         <div class="search-list-details padding-top-1 altra-heading">
