@@ -1,4 +1,5 @@
 <template>
+  
     <div class="header-logo header-bg">
                     <!-- <a href="index.html"><img src="~/assets/uploads/main-logo.png" class="img-responsive logo" alt="altra travels" /></a> -->
                     <!-- new header-->
@@ -36,6 +37,7 @@ export default {
       }
 
   },
+  
   computed: {
     logoSource(){
     return this.scrollPosition > 8 ? require('../assets/uploads/text-logo.png') : require('../assets/uploads/text.png');

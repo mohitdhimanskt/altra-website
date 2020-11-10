@@ -1,7 +1,7 @@
 <template>
-     <div class="hero-section">
+      <div class="hero-section">
                     <div class="container">
-                        <h2 class="primary-color">Lorem Ipsum</h2>
+                        <h2 class="altra-row-title text-center divider-text"><span>Find deals on Latest Treks and much more..</span></h2>
                         <div class="col-12">
                             <div class="home-search">
                                 <form>
@@ -13,6 +13,8 @@
                             </div>
                         </div>
                     </div>
+                    <!---->
+                </div>
 </template>
 <script>
 export default {

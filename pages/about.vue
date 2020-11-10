@@ -1,10 +1,12 @@
 <template>
+ 
  <div data-server-rendered="true">
         <!---->
         <div id="layout">
             <div class="home">
-                <div class="header-logo other-logo">
-                    <!-- new header-->
+               
+                <div v-bind:class="[showBackgroundLogo ? 'header-bg' : 'other-logo', 'header-logo']">
+                    
                         <nav>
                            <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
@@ -24,8 +26,8 @@
                            </div>
                         </nav>
 
-                    <!-- new header ends-->
-                </div> <!-- header-logo ends-->
+                    
+                </div> 
 
             <div class="About-us-page padding-top-1 altra-heading">
             <div class="container">
@@ -105,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="home-newsletter">
+            <!-- <div class="home-newsletter">
                 <div class="container">
                     <div class="newsletter-box">
                         <h2 class="altra-row-title text-center">Subscribe to stay connected</h2>
@@ -173,7 +175,7 @@
                         <p class="copyright">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="midlight_purple-footer">
                 <div class="container">
                     <div class="row">
@@ -192,38 +194,14 @@
                                 </div>
                             </div>
                         </div>
+ 
             
 </template>
 <script>
 export default {
   name: "about",
-  data: function() {
-    return {
-      scrollPosition: null
-    };
+props: {
+    showBackgroundLogo: Boolean
   },
-
-  mounted() {
-    window.addEventListener("scroll", this.updateScroll);
-  },
-  methods: {
-    updateScroll() {
-      this.scrollPosition = window.scrollY;
-    },
-    myFunction() {
-      var nav = document.getElementById(".menu-icon");
-      // var sticky = header.offsetTop;
-      window.onscroll = function() {
-        if (window.scrollTop()) {
-          nav.classList.add("");
-        } else {
-          nav.classList.remove("");
-        }
-      };
-    }
-  },
-  destroy() {
-    window.removeEventListener("scroll", this.updateScroll);
-  }
 };
 </script>

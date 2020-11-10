@@ -38,6 +38,7 @@ export default {
   buildModules: [
     '@nuxtjs/fontawesome' 
   ],
+  
  
 
   // Modules (https://go.nuxtjs.dev/config-modules)

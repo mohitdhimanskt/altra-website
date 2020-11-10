@@ -1,8 +1,8 @@
 <template>
      <div id="layout">
             <div class="home">
-                <div class="header-logo other-logo">
-                    <!-- new header-->
+                <div v-bind:class="[showBackgroundLogo ? 'header-bg' : 'other-logo', 'header-logo']">
+                    
                         <nav>
                            <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
@@ -12,7 +12,7 @@
                            </div>
                            <div class="menu">
                                <ul>
-                               <li><nuxt-link to="treks">Treks</nuxt-link></li>
+                                <li><nuxt-link to="treks">Treks</nuxt-link></li>
                                 <li><nuxt-link to="leader">Trek Leads</nuxt-link></li>
                                 <li><nuxt-link to="/">Blog</nuxt-link></li>
                                <li> <nuxt-link to="about">About Us</nuxt-link></li>
@@ -22,8 +22,9 @@
                            </div>
                         </nav>
 
-                    <!-- new header ends-->
-                </div> <!-- header-logo ends-->
+                    
+                </div> 
+
 
 <div class="contact-page padding-top-1 altra-heading">
             <div class="container">
@@ -184,7 +185,7 @@
             </div>
 
                 
-           <div class="home-newsletter">
+           <!-- <div class="home-newsletter">
     <div class="container">
         <div class="newsletter-box">
             <h2 class="altra-row-title text-center">Subscribe to stay connected</h2>
@@ -248,13 +249,13 @@
                 </ul>
             </div>
         </div>  
-      </div> <!-- row ends -->
+      </div> 
         <div class="col-12 col-md-12 col-lg-12">
             <hr />
             <p class="copyright">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</p>
         </div>
     </div>
-</div>
+</div> -->
             <!-- <div class="midlight_purple-footer">
                 <div class="container">
                     <div class="row">
@@ -275,3 +276,11 @@
                         
             
 </template>
+<script>
+export default {
+    name: 'contact',
+    props: {
+    showBackgroundLogo: Boolean
+  },
+}
+</script>
