@@ -7,19 +7,20 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
-      }
-    ]
+    // link: [
+    //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    //   {
+    //     rel: 'stylesheet',
+    //     href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+    //   }
+    // ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    "assets/css/bootstrap.css",
     "assets/css/style.css",
-    // "assets/css/bootstrap.min.css"
+
   ],
   js:[
     "assets/js/jquery.min.js",
