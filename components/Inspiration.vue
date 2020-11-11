@@ -59,6 +59,9 @@
 </template>
 <script>
 export default {
-    name: 'Inspiration'
+    name: 'Inspiration',
+    data:function(){
+        
+    }
 }
 </script>

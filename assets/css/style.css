@@ -394,8 +394,8 @@ font-size: 14px;
 line-height: 1.18;
 color: #6e6d6d;
 max-height: 120px;
-}
-.home-upcommingtrek-card-description {
+
+
 padding: 20px;
 
 }
@@ -457,6 +457,7 @@ transition: all .4s;
 transform: translateZ(0);
 background-size: cover;
 background-repeat: no-repeat;
+background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 12%,#000 97%);
 border-radius: 10px;
 }
 .overlay-image {
