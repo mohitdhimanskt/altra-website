@@ -8,29 +8,33 @@
         What people are saying about us
       </h4>
       <div class="row">
-        <div class="col-12 col-md-4 col-lg-3 mb-5">
+        <div class="col-12 col-md-4 col-lg-3 mb-5"
+          v-for="items in explorersArr"
+          :key="items.itemClass">
           <a href="#" target="_blank">
             <div class="home-testimonials-box">
-              <img
-                src="~/assets/uploads/testimonial-1.jpg"
-                alt="Testimonial"
+            
+               <div
+               
                 class="home-testimonials-img"
-              />
+                
+            v-bind:style='{ backgroundImage: "url(" + items.url + ")" }'
+              > 
+            </div>
               <div class="home-testimonials-box-ratings">
                 <h4 class="home-testimonials-person-name">
-                  Pin Bhaba Pass Trek
+                  {{items.title}}
                 </h4>
-                <label class="home-testimonials-person-detail">Emma </label>
+                <label class="home-testimonials-person-detail">{{items.author}} </label>
                 <p class="home-testimonials-person-text text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                  sint laudantium
+                  {{items.description}}
                 </p>
               </div>
             </div>
           </a>
         </div>
 
-        <div class="col-12 col-md-4 col-lg-3 mb-5">
+        <!-- <div class="col-12 col-md-4 col-lg-3 mb-5">
           <a href="#" target="_blank">
             <div class="home-testimonials-box">
               <img
@@ -48,8 +52,8 @@
               </div>
             </div>
           </a>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3 mb-5">
+        </div> -->
+        <!-- <div class="col-12 col-md-4 col-lg-3 mb-5">
           <a href="#" target="_blank">
             <div class="home-testimonials-box">
               <img
@@ -67,8 +71,8 @@
               </div>
             </div>
           </a>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3 mb-5">
+        </div> -->
+        <!-- <div class="col-12 col-md-4 col-lg-3 mb-5">
           <a href="#" target="_blank">
             <div class="home-testimonials-box">
               <img
@@ -86,7 +90,7 @@
               </div>
             </div>
           </a>
-        </div>
+        </div> -->
       </div>
       <!-- row ends -->
     </div>
@@ -94,6 +98,40 @@
 </template>
 <script>
 export default {
-    name: 'TrekExplorersLove'
+    name: 'TrekExplorersLove',
+    data:function(){
+    return{
+      explorersArr:[
+        {
+          itemClass: 'item-1',
+          title:"Pin Bhaba Pass Trek",
+          url:require('../assets/uploads/testimonial-1.jpg'),
+          author:'Emma',
+          description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint laudantium"
+        },
+        { 
+          itemClass: 'item-2',
+          title:"Hampta Pass Trek",
+          url:require('../assets/uploads/testimonial-2.jpg'),
+          author:'Bella',
+          description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint laudantium"
+        },
+        {
+          itemClass: 'item-3',
+          title:"Kedartal Trek",
+          url:require('../assets/uploads/testimonial-3.jpg'),
+          author:'Amanda',
+          description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint laudantium"
+        },
+        {
+         itemClass: 'item-4',
+          title:"Goechala Trek",
+          url:require('../assets/uploads/testimonial-4.jpg'),
+          author:'Vikram',
+          description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint laudantium"
+        },
+      ],
+    }
+  }
 }
 </script>

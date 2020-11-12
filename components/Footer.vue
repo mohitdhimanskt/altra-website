@@ -38,11 +38,11 @@
           <div class="widget">
             <h2>Service Links</h2>
             <ul>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
             </ul>
           </div>
         </div>
@@ -50,11 +50,11 @@
           <div class="widget">
             <h2>Other Links</h2>
             <ul>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
+             <li><nuxt-link to="/">Lorem</nuxt-link></li>
+             <li><nuxt-link to="/">Lorem</nuxt-link></li>
+             <li><nuxt-link to="/">Lorem</nuxt-link></li>
+             <li><nuxt-link to="/">Lorem</nuxt-link></li>
+             <li><nuxt-link to="/">Lorem</nuxt-link></li>
             </ul>
           </div>
         </div>
@@ -62,11 +62,11 @@
           <div class="widget">
             <h2>Useful Links</h2>
             <ul>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>
+              <li><nuxt-link to="/">Lorem</nuxt-link></li>  
             </ul>
           </div>
         </div>
