@@ -86,29 +86,31 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="col-12 col-md-4 col-lg-3 mb-5"
+            v-for="items in trekscateArr"
+          :key="items.itemClass"
+          >
             <a href="#">
               <div class="home-upcommingtrek-card">
                 <img
-                  src="~/assets/uploads/upcoming-trek-1.jpg"
-                  alt="Lorem Ipsum"
-                  title="Lorem Ipsum"
+                 
                   class="home-upcommingtrek-image img-responsive"
+                  :src="items.url"
                 />
-                <div class="trek-box-badge">Moderate-Difficult</div>
+                <div class="trek-box-badge">{{items.title}}</div>
                 <div class="home-upcommingtrek-card-description">
                   <label class="home-upcommingtrek-card-label primary-color"
-                    >Pin Bhaba Pass Trek</label
+                    >{{items.author}}</label
                   >
                   <h5 class="home-upcommingtrek-card-title">
-                    (The Grandest Crossover Trek In Our Country)
+                    {{items.content}}
                   </h5>
                   <ul class="trek-box-details">
                     <li class="trek-box-item">
-                      <div class="trek-box-item-detail">16,105 ft</div>
+                      <div class="trek-box-item-detail">{{items.description}}</div>
                     </li>
                     <li class="trek-box-item">
-                      <div class="trek-box-item-detail">9 days</div>
+                      <div class="trek-box-item-detail">{{items.day}}</div>
                     </li>
                   </ul>
                   <input
@@ -239,7 +241,7 @@ export default {
   name: "TreksCategories",
   data: function() {
     return {
-      treksArr: [
+      trekscateArr: [
         {
           itemClass: "item-1",
           title: "Moderate-Difficult",
