@@ -86,7 +86,58 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-3 mb-5"
+          <div
+            class="col-12 col-md-4 col-lg-3 mb-5"
+            v-for="items in trekscateArr"
+            :key="items.itemClass"
+          >
+            <a href="#">
+              <div class="home-upcommingtrek-card">
+                <img
+              
+                  class="home-upcommingtrek-image"
+                  :src="items.url"
+                />
+                <div class="trek-box-badge">{{ items.title }}</div>
+                <div class="home-upcommingtrek-card-description">
+                  <label class="home-upcommingtrek-card-label primary-color">{{
+                    items.author
+                  }}</label>
+                  <h5 class="home-upcommingtrek-card-title">
+                    {{ items.content }}
+                  </h5>
+                  <ul class="trek-box-details">
+                    <li class="trek-box-item">
+                      <img
+                        loading="lazy"
+                        class="trek-box-item-icon lazyloaded"
+                        src="../assets/uploads/peak.svg"
+                        alt="Altitude"
+                      />
+                      <div class="trek-box-item-detail">
+                        {{ items.description }}
+                      </div>
+                    </li>
+                    <li class="trek-box-item">
+                      <img
+                        loading="lazy"
+                        class="trek-box-item-icon lazyloaded"
+                        src="../assets/uploads/calendar.svg"
+                        alt="Duration"
+                      />
+                      <div class="trek-box-item-detail">{{ items.day }}</div>
+                    </li>
+                  </ul>
+                  <input
+                    type="submit"
+                    value="Book Now"
+                    id="upcoming-trek-button"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="col-12 col-md-4 col-lg-3 mb-5"
             v-for="items in trekscateArr"
           :key="items.itemClass"
           >
@@ -121,7 +172,7 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div> -->
           <!-- <div class="col-12 col-md-4 col-lg-3 mb-5">
             <a href="#">
               <div class="home-upcommingtrek-card">
