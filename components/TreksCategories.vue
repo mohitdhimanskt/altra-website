@@ -91,7 +91,7 @@
             v-for="items in trekscateArr"
             :key="items.itemClass"
           >
-            <a href="#">
+            <nuxt-link to="treks">
               <div class="home-upcommingtrek-card">
                 <img
               
@@ -135,7 +135,7 @@
                   />
                 </div>
               </div>
-            </a>
+            </nuxt-link>
           </div>
           <!-- <div class="col-12 col-md-4 col-lg-3 mb-5"
             v-for="items in trekscateArr"

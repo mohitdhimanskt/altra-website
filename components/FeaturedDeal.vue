@@ -11,7 +11,7 @@
            :class="[ index > 1 ? 'col-lg-4 col-xl-4' : 'col-lg-6 col-xl-6']"
            >
           <div class="featured-deals"
-            v-bind:style='{ backgroundImage: "url(" + items.url + ")" }'>
+              v-bind:style='{ backgroundImage: "url(" + items.url + ")" }'>
             <div class="overlay-image"></div>
              <div class="featured-deals-content"> 
           <h4 class="home-featured-deals-title">{{items.title}}</h4>
@@ -81,8 +81,10 @@
 </template>
 
 <script>
+import { OptiImage } from 'opti-image'
 export default {
   name: "FeaturedDeal",
+  components: {OptiImage},
   data:function(){
     return{
       featuredArr:[

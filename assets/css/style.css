@@ -331,6 +331,9 @@ font-weight: 300;
 line-height: 1.4;
 margin-bottom: 40px;
 }
+.home-upcommingtrek-card-description{
+     padding: 20px;
+}
 .home-upcommingtrek-button {
 cursor: pointer;
 border-radius: 50px;
