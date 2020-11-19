@@ -15,7 +15,7 @@
         >
           <a href="#" target="_blank">
             <div class="home-testimonials-box">
-              <img
+              <opti-image
                 class="home-testimonials-img"
               
                 :src="items.url"

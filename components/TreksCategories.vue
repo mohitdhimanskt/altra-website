@@ -93,7 +93,7 @@
           >
             <nuxt-link to="treks">
               <div class="home-upcommingtrek-card">
-                <img
+                <opti-image
               
                   class="home-upcommingtrek-image"
                   :src="items.url"

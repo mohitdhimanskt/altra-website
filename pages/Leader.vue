@@ -50,7 +50,7 @@
               >
                 <nuxt-link to="/">
                   <div class="home-trekleader-card">
-                    <img class="home-trekleader-image" :src="items.url" />
+                    <opti-image class="home-trekleader-image" :src="items.url" />
                     <div class="home-upcommingtrek-card-description">
                       <label
                         class="home-upcommingtrek-card-label primary-color"

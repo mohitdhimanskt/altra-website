@@ -9,11 +9,11 @@
                            </div>
                            <div class="logo">
                             <nuxt-link to="/">
-                              <img 
+                              <opti-image 
                               :src="logoSource"
-                               class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
+                               class="text-logo img-responsive" alt="altra travels" /></nuxt-link>
                            </div>
-                           <div class="menu">
+                           <div class="menu"> 
                               <ul>
                                 <li><nuxt-link to="treks">Treks</nuxt-link></li>
                                 <li><nuxt-link to="leader">Trek Leads</nuxt-link></li>
@@ -49,6 +49,9 @@ export default {
     methods: {
         updateScroll() {
       this.scrollPosition = window.scrollY
+    },
+    getImageRequirePath(path){
+      return require(path);
     },
       myFunction() {
 

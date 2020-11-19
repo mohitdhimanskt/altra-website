@@ -83,7 +83,7 @@
                                 </p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center home-aboutus-section">
-                                <img title="price/quality logo" src="~/assets/uploads/rank.svg" alt="lorem ipsum">
+                                <img title="price/quality logo" src="~/assets/uploads/rank.svg" alt="lorem ipsum" >
                                 <h4 class="home-aboutus-title">
                                     1st in price/quality
                                 </h4>
@@ -203,5 +203,10 @@ export default {
 props: {
     showBackgroundLogo: Boolean
   },
+  methods:{
+      getImageRequirePath(path){
+      return require(path);
+    },
+  }
 };
 </script>
