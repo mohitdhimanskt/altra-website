@@ -7,7 +7,7 @@
                               <i class="fa fa-bars fa-2x"></i>
                            </div>
                            <div class="logo">
-                            <nuxt-link to="/"><img src="~/assets/uploads/text-logo.png" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
+                            <nuxt-link to="/"><opti-image :src="require('~/assets/uploads/text-logo.png')" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
                            </div>
                            <div class="menu">
                                <ul>
@@ -78,5 +78,10 @@ export default {
     props: {
     showBackgroundLogo: Boolean
   },
+  methods:{
+       getImageRequirePath(path){
+      return require(path);
+    },
+  }
 }
 </script>

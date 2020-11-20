@@ -108,10 +108,9 @@
                   </h5>
                   <ul class="trek-box-details">
                     <li class="trek-box-item">
-                      <img
-                        loading="lazy"
-                        class="trek-box-item-icon lazyloaded"
-                        src="../assets/uploads/peak.svg"
+                      <opti-image
+                        class="trek-box-item-icon"
+                        :src="require('../assets/uploads/peak.svg')"
                         alt="Altitude"
                       />
                       <div class="trek-box-item-detail">
@@ -119,10 +118,10 @@
                       </div>
                     </li>
                     <li class="trek-box-item">
-                      <img
-                        loading="lazy"
+                      <opti-image
+                        
                         class="trek-box-item-icon lazyloaded"
-                        src="../assets/uploads/calendar.svg"
+                        :src="require('../assets/uploads/calendar.svg')"
                         alt="Duration"
                       />
                       <div class="trek-box-item-detail">{{ items.day }}</div>
@@ -137,145 +136,9 @@
               </div>
             </nuxt-link>
           </div>
-          <!-- <div class="col-12 col-md-4 col-lg-3 mb-5"
-            v-for="items in trekscateArr"
-          :key="items.itemClass"
-          >
-            <a href="#">
-              <div class="home-upcommingtrek-card">
-                <img
-                 
-                  class="home-upcommingtrek-image img-responsive"
-                  :src="items.url"
-                />
-                <div class="trek-box-badge">{{items.title}}</div>
-                <div class="home-upcommingtrek-card-description">
-                  <label class="home-upcommingtrek-card-label primary-color"
-                    >{{items.author}}</label
-                  >
-                  <h5 class="home-upcommingtrek-card-title">
-                    {{items.content}}
-                  </h5>
-                  <ul class="trek-box-details">
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">{{items.description}}</div>
-                    </li>
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">{{items.day}}</div>
-                    </li>
-                  </ul>
-                  <input
-                    type="submit"
-                    value="Book Now"
-                    id="upcoming-trek-button"
-                  />
-                </div>
-              </div>
-            </a>
-          </div> -->
-          <!-- <div class="col-12 col-md-4 col-lg-3 mb-5">
-            <a href="#">
-              <div class="home-upcommingtrek-card">
-                <img
-                  src="~/assets/uploads/upcoming-trek-2.jpg"
-                  alt="Lorem Ipsum"
-                  title="Lorem Ipsum"
-                  class="home-upcommingtrek-image"
-                />
-                <div class="trek-box-badge">Moderate</div>
-                <div class="home-upcommingtrek-card-description">
-                  <label class="home-upcommingtrek-card-label primary-color"
-                    >Chandratal Trek</label
-                  >
-                  <h5 class="home-upcommingtrek-card-title">
-                    (A Charming Trek in Spiti Valley)
-                  </h5>
-                  <ul class="trek-box-details">
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">16,105 ft</div>
-                    </li>
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">9 days</div>
-                    </li>
-                  </ul>
-                  <input
-                    type="submit"
-                    value="Book Now"
-                    id="upcoming-trek-button"
-                  />
-                </div>
-              </div>
-            </a>
-          </div> -->
-          <!-- <div class="col-12 col-md-4 col-lg-3 mb-5">
-            <a href="#">
-              <div class="home-upcommingtrek-card">
-                <img
-                  src="~/assets/uploads/upcoming-trek-3.jpg"
-                  alt="Lorem Ipsum"
-                  class="home-upcommingtrek-image"
-                />
-                <div class="trek-box-badge">Easy-Moderate</div>
-                <div class="home-upcommingtrek-card-description">
-                  <label class="home-upcommingtrek-card-label primary-color"
-                    >Goechala Trek</label
-                  >
-                  <h5 class="home-upcommingtrek-card-title">
-                    (A Trek That Takes You Close To The World’s Third Highest
-                    Mountain)
-                  </h5>
-                  <ul class="trek-box-details">
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">16,105 ft</div>
-                    </li>
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">9 days</div>
-                    </li>
-                  </ul>
-                  <input
-                    type="submit"
-                    value="Book Now"
-                    id="upcoming-trek-button"
-                  />
-                </div>
-              </div>
-            </a>
-          </div> -->
-          <!-- <div class="col-12 col-md-4 col-lg-3 mb-5">
-            <a href="#">
-              <div class="home-upcommingtrek-card">
-                <img
-                  src="~/assets/uploads/upcoming-trek-4.jpg"
-                  alt="Lorem Ipsum"
-                  class="home-upcommingtrek-image"
-                />
-                <div class="trek-box-badge">Difficult</div>
-                <div class="home-upcommingtrek-card-description">
-                  <label class="home-upcommingtrek-card-label primary-color"
-                    >Hampta Pass Trek</label
-                  >
-                  <h5 class="home-upcommingtrek-card-title">
-                    (One of The Most Dramatic Crossover Treks In The Himalayas)
-                  </h5>
-                  <ul class="trek-box-details">
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">16,105 ft</div>
-                    </li>
-                    <li class="trek-box-item">
-                      <div class="trek-box-item-detail">9 days</div>
-                    </li>
-                  </ul>
-                  <input
-                    type="submit"
-                    value="Book Now"
-                    id="upcoming-trek-button"
-                  />
-                </div>
-              </div>
-            </a>
-          </div> -->
+         
         </div>
-        <!---->
+    
       </div>
     </div>
     <div class="upcoming-trek-seemore text-center">
@@ -331,7 +194,13 @@ export default {
           day: "9 days"
         }
       ]
-    };
+    }
+  },
+  methods: {
+     getImageRequirePath(path ){
+      return require(path);
+    },
   }
+  
 };
 </script>

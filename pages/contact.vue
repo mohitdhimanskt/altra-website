@@ -8,7 +8,7 @@
                               <i class="fa fa-bars fa-2x"></i>
                            </div>
                            <div class="logo">
-                            <nuxt-link to="/"><img src="~/assets/uploads/text-logo.png" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
+                            <nuxt-link to="/"><opti-image :src="require('~/assets/uploads/text-logo.png')" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
                            </div>
                            <div class="menu">
                                <ul>
@@ -38,7 +38,7 @@
                 <!--  1  -->
                 <div class="addr_box1">
                 <div class="img_addr">
-                <img src="~/assets/uploads/our_office.png" class="img-responsive" alt="lorem ipsum">
+                <opti-image :src="require('~/assets/uploads/our_office.png')" class="img-responsive" alt="lorem ipsum" />
                 </div> <!--  img_addr  ends  -->
                 <div class="addr_txt">
                 <p class="ou_offc">Our Office</p>
@@ -52,7 +52,7 @@
                 <!--  2   -->
                 <div class="addr_box1">
                 <div class="img_addr">
-                <img src="~/assets/uploads/emial.png" class="img-responsive" alt="lorem ipsum">
+                <opti-image :src="require('~/assets/uploads/emial.png')" class="img-responsive" alt="lorem ipsum" />
                 </div> <!--  img_addr  ends  -->
                 <div class="addr_txt">
                 <p class="ou_offc">Email Address</p>
@@ -67,7 +67,7 @@
                 <!--  3   -->
                 <div class="addr_box1">
                 <div class="img_addr">
-                <img src="~/assets/uploads/ph_fax.png" class="img-responsive" alt="lorem ipsum">
+                <opti-image :src="require('~/assets/uploads/ph_fax.png')" class="img-responsive" alt="lorem ipsum" />
                 </div> <!--  img_addr  ends  -->
                 <div class="addr_txt">
                 <p class="ou_offc">Phone and Fax</p>
@@ -282,5 +282,10 @@ export default {
     props: {
     showBackgroundLogo: Boolean
   },
+  methods:{
+       getImageRequirePath(path){
+      return require(path);
+    },
+  }
 }
 </script>

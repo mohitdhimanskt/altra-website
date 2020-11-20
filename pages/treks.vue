@@ -10,7 +10,7 @@
                               <i class="fa fa-bars fa-2x"></i>
                            </div>
                            <div class="logo">
-                            <nuxt-link to="/"><img src="~/assets/uploads/text-logo.png" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
+                            <nuxt-link to="/"><opti-image :src="require('~/assets/uploads/text-logo.png')" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
                            </div>
                            <div class="menu">
                                <ul>
@@ -385,8 +385,8 @@
               <div class="search-list-box">
                 <!--  -->
                 <div class="search-deal-image">
-                  <img
-                    src="~/assets/uploads/lake.jpg"
+                  <opti-image
+                    :src="require('~/assets/uploads/lake.jpg')"
                     class="img-responsive"
                     alt="lorem ipsum"
                   />
@@ -459,8 +459,8 @@
               <div class="search-list-box">
                 <!--  -->
                 <div class="search-deal-image">
-                  <img
-                    src="~/assets/uploads/lake.jpg"
+                  <opti-image
+                    :src="require('~/assets/uploads/lake.jpg')"
                     class="img-responsive"
                     alt="lorem ipsum"
                   />
@@ -534,8 +534,8 @@
               <div class="search-list-box">
                 <!--  -->
                 <div class="search-deal-image">
-                  <img
-                    src="~/assets/uploads/lake.jpg"
+                  <opti-image
+                    :src="require('~/assets/uploads/lake.jpg')"
                     class="img-responsive"
                     alt="lorem ipsum"
                   />
@@ -631,5 +631,10 @@ export default {
   props: {
     showBackgroundLogo: Boolean
   },
+  methods:{
+     getImageRequirePath(path){
+      return require(path);
+    },
+  }
 }
 </script>

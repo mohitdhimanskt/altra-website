@@ -12,7 +12,7 @@
                               <i class="fa fa-bars fa-2x"></i>
                            </div>
                            <div class="logo">
-                            <nuxt-link to="/"><img src="~/assets/uploads/text-logo.png" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
+                            <nuxt-link to="/"><opti-image :src="require('~/assets/uploads/text-logo.png')" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
                            </div>
                            <div class="menu">
                                <ul>
@@ -47,7 +47,7 @@
                 
                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                 <div class="abt_side">
-                <img src="~/assets/uploads/upcoming-trek-3.jpg" class="img-responsive" alt="lorem ipsum">
+                <opti-image :src="require('~/assets/uploads/upcoming-trek-3.jpg')" class="img-responsive" alt="lorem ipsum"/>
                 </div>
                 </div> <!--  coloumn ends  -->
                 <div class="clearfix"></div>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center home-aboutus-section">
-                                <img title="New destinations logo" src="~/assets/uploads/map.svg" alt="lorem ipsum">
+                                <opti-image title="New destinations logo" :src="require('~/assets/uploads/map.svg')" alt="lorem ipsum"/>
                                 <h4 class="home-aboutus-title">
                                     All India Treks
                                 </h4>
@@ -73,7 +73,7 @@
                                 </p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center home-aboutus-section">
-                                <img title="campervan icon" src="~/assets/uploads/place.svg" alt="lorem ipsum">
+                                <opti-image title="campervan icon" :src="require('~/assets/uploads/place.svg')" alt="lorem ipsum"/>
                                 <h4 class="home-aboutus-title">
                                     Integrated rental marketplace
                                 </h4>
@@ -83,7 +83,7 @@
                                 </p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center home-aboutus-section">
-                                <img title="price/quality logo" src="~/assets/uploads/rank.svg" alt="lorem ipsum" >
+                                <opti-image title="price/quality logo" :src="require('~/assets/uploads/rank.svg')" alt="lorem ipsum" />
                                 <h4 class="home-aboutus-title">
                                     1st in price/quality
                                 </h4>
@@ -93,7 +93,7 @@
                                 </p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center home-aboutus-section">
-                                <img title="Help logo" src="~/assets/uploads/phone.svg" alt="lorem ipsum">
+                                <opti-image title="Help logo" :src="require('~/assets/uploads/phone.svg')" alt="lorem ipsum"/>
                                 <h4 class="home-aboutus-title">
                                     100% digital
                                 </h4>

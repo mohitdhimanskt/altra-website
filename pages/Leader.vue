@@ -15,8 +15,8 @@
             </div>
             <div class="logo">
               <nuxt-link to="/"
-                ><img
-                  src="~/assets/uploads/text-logo.png"
+                ><opti-image
+                  :src="require('~/assets/uploads/text-logo.png')"
                   class="text-logo img-responsive"
                   alt="altra travels"
               /></nuxt-link>
@@ -188,7 +188,11 @@ export default {
           }
         ]
       };
-    }
-  
+    },
+  methods:{
+ getImageRequirePath(path){
+      return require(path);
+    },
+  }
 };
 </script>
