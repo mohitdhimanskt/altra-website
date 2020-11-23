@@ -1,30 +1,7 @@
 <template>
      <div id="layout">
             <div class="home">
-                <div v-bind:class="[showBackgroundLogo ? 'header-bg' : 'other-logo', 'header-logo']">
-                    
-                        <nav>
-                           <div class="menu-icon">
-                              <i class="fa fa-bars fa-2x"></i>
-                           </div>
-                           <div class="logo">
-                            <nuxt-link to="/"><opti-image :src="require('~/assets/uploads/text-logo.png')" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
-                           </div>
-                           <div class="menu">
-                               <ul>
-                                <li><nuxt-link to="treks">Treks</nuxt-link></li>
-                                <li><nuxt-link to="leader">Trek Leads</nuxt-link></li>
-                                <li><nuxt-link to="/">Blog</nuxt-link></li>
-                               <li> <nuxt-link to="about">About Us</nuxt-link></li>
-                                <li><nuxt-link to="contact">Contact Us</nuxt-link></li>
-                                <li><nuxt-link to="sign"> Sign In</nuxt-link></li>
-                              </ul>
-                           </div>
-                        </nav>
-
-                    
-                </div> 
-
+           <NavigationBar></NavigationBar>
 
 <div class="contact-page padding-top-1 altra-heading">
             <div class="container">
@@ -185,90 +162,7 @@
             </div>
 
                 
-           <!-- <div class="home-newsletter">
-    <div class="container">
-        <div class="newsletter-box">
-            <h2 class="altra-row-title text-center">Subscribe to stay connected</h2>
-            <p class="altra-row-text text-center">Sign up and we’ll send you the details of upcoming treks</p>
-            <form class="newsletter_frm">
-        <input type="email" id="newsletter" placeholder="Enter your mail">
-        <input type="submit" class="button-color newsletter_btn" value="Subscribe">
-    </form>
-    </div>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4 col-lg-3">
-            <div class="widget">
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-            </ul>
-        </div>
-        </div>  
-        <div class="col-12 col-md-4 col-lg-3">
-            <div class="widget">
-                <h2>Service Links</h2>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-        </div>  
-        <div class="col-12 col-md-4 col-lg-3 ">
-            <div class="widget">
-                <h2>Other Links</h2>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-        </div>  
-        <div class="col-12 col-md-4 col-lg-3">
-            <div class="widget">
-                <h2>Useful Links</h2>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-        </div>  
-      </div> 
-        <div class="col-12 col-md-12 col-lg-12">
-            <hr />
-            <p class="copyright">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</p>
-        </div>
-    </div>
-</div> -->
-            <!-- <div class="midlight_purple-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-4 col-lg-3">
-                            <h2 class="footer-logo">Altra Travels</h2>
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-9">
-                                <p class="copyright">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</p>
-                            </div>
-                    </div>
-                </div>
-            </div> -->
-            
+           
                             
                            
                                 </div>
@@ -279,9 +173,7 @@
 <script>
 export default {
     name: 'contact',
-    props: {
-    showBackgroundLogo: Boolean
-  },
+  
   methods:{
        getImageRequirePath(path){
       return require(path);

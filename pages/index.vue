@@ -47,7 +47,7 @@ export default {
         }
         if (window.scrollTop()) {
           nav.classList.add("black");
-        } else {
+        } else {  
           nav.classList.remove("black");
         }
       };

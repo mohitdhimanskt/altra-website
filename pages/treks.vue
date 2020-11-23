@@ -3,29 +3,7 @@
     <!---->
     <div id="layout">
       <div class="home">
-          <div v-bind:class="[showBackgroundLogo ? 'header-bg' : 'other-logo', 'header-logo']">
-                    
-                        <nav>
-                           <div class="menu-icon">
-                              <i class="fa fa-bars fa-2x"></i>
-                           </div>
-                           <div class="logo">
-                            <nuxt-link to="/"><opti-image :src="require('~/assets/uploads/text-logo.png')" class="text-logo img-responsive" alt="altra travels"/></nuxt-link>
-                           </div>
-                           <div class="menu">
-                               <ul>
-                                <li><nuxt-link to="treks">Treks</nuxt-link></li>
-                                <li><nuxt-link to="leader">Trek Leads</nuxt-link></li>
-                                <li><nuxt-link to="/">Blog</nuxt-link></li>
-                               <li> <nuxt-link to="about">About Us</nuxt-link></li>
-                                <li><nuxt-link to="contact">Contact Us</nuxt-link></li>
-                                <li><nuxt-link to="sign"> Sign In</nuxt-link></li>
-                              </ul>
-                           </div>
-                        </nav>
-
-                    
-                </div> 
+      <NavigationBar></NavigationBar>
 
         <!-- header-logo ends-->
 
@@ -609,18 +587,7 @@
         </div>
 
         
-        <!-- <div class="midlight_purple-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-4 col-lg-3">
-                            <h2 class="footer-logo">Altra Travels</h2>
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-9">
-                                <p class="copyright">2020-2021 Explore alternate travels Pvt Ltd. All Rights Reserved.</p>
-                            </div>
-                    </div>
-                </div>
-            </div> -->
+      
       </div>
     </div>
   </div>
@@ -628,9 +595,7 @@
 <script>
 export default {
   name: 'treks',
-  props: {
-    showBackgroundLogo: Boolean
-  },
+ 
   methods:{
      getImageRequirePath(path){
       return require(path);
