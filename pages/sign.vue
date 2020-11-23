@@ -1,6 +1,6 @@
 <template>
   <div data-server-rendered="true">
-    <NavigationBar></NavigationBar>
+    
     <!---->
     <div id="logreg-forms">
       <form class="form-signin">

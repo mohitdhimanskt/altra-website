@@ -4,7 +4,6 @@
     <div id="layout">
       <div class="home">
         
-<NavigationBar></NavigationBar>
         <!-- header-logo ends-->
 
         <div class="leaders-page padding-top-1 altra-heading">

@@ -3,7 +3,7 @@
     <!---->
     <div id="layout">
       <div class="home">
-      <NavigationBar></NavigationBar>
+      
 
         <!-- header-logo ends-->
 

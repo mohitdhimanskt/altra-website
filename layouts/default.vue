@@ -1,7 +1,7 @@
 <template>
   <div>
-   
-    <!-- <Header></Header> -->
+    <NavigationBar></NavigationBar>
+     <!-- <Header :showBackgroundLogo="false"></Header> -->
     <Nuxt />
     <Footer></Footer>
   </div>
@@ -9,12 +9,10 @@
 <script>
 
 import Footer from '~/components/Footer.vue'
-
 export default {
   components:{
   
-    Footer,
- 
+    Footer
   }
 }
 </script>

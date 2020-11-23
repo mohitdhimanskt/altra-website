@@ -1,7 +1,7 @@
 <template>
      <div id="layout">
             <div class="home">
-           <NavigationBar></NavigationBar>
+           
 
 <div class="contact-page padding-top-1 altra-heading">
             <div class="container">

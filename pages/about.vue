@@ -5,7 +5,7 @@
         <div id="layout">
             <div class="home">
           
-                <NavigationBar></NavigationBar>
+                
 
             <div class="About-us-page padding-top-1 altra-heading">
             <div class="container">
