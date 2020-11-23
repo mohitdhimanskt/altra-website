@@ -1,6 +1,6 @@
 <template>
     <div data-server-rendered="true">
-        <!---->
+    
         <div id="layout">
             <div class="home">
                

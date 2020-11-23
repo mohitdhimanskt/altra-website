@@ -1,6 +1,7 @@
 <template>
   <div>
-     <!-- <Header :showBackgroundLogo="false"></Header> -->
+   
+    <!-- <Header></Header> -->
     <Nuxt />
     <Footer></Footer>
   </div>
@@ -8,10 +9,12 @@
 <script>
 
 import Footer from '~/components/Footer.vue'
+
 export default {
   components:{
   
-    Footer
+    Footer,
+ 
   }
 }
 </script>
