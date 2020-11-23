@@ -173,7 +173,7 @@
 <script>
 export default {
     name: 'contact',
-  
+  layout: 'auth',
   methods:{
        getImageRequirePath(path){
       return require(path);

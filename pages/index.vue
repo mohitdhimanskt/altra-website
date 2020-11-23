@@ -1,7 +1,7 @@
 <template>
   <div id="layout">
     
-      <Header></Header>
+      
       <HeroSection></HeroSection>
     
     <FeaturedDeal></FeaturedDeal>
@@ -88,4 +88,9 @@ export default {
 //         }
 //     })
 // });
+</script>
+<script>
+export default {
+  layout:'default'
+}
 </script>

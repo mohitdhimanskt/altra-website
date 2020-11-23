@@ -97,7 +97,7 @@
 <script>
 export default {
   name: "about",
-
+layout:'auth',
   methods:{
       getImageRequirePath(path){
       return require(path);

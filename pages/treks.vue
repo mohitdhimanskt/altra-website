@@ -595,7 +595,7 @@
 <script>
 export default {
   name: 'treks',
- 
+ layout:'auth',
   methods:{
      getImageRequirePath(path){
       return require(path);

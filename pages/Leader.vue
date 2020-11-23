@@ -161,6 +161,8 @@ export default {
  getImageRequirePath(path){
       return require(path);
     },
-  }
+  },
+  layout:'auth'
+  
 };
 </script>

@@ -117,7 +117,7 @@
 <script>
 export default {
   name: "sign",
-
+layout:'auth',
   methods: {
     getImageRequirePath(path) {
       return require(path);
